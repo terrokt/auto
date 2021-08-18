@@ -61,7 +61,46 @@ body{
     background-color: #5A0D67;
     padding: 14px 30px 15px;
     color: #fff;
+    transition: all .5s;
     
+}
+.btn:hover{
+    background-color: #fff;
+    color: #5A0D67;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 1px 5px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 1px 5px 5px rgba(0,0,0,0);
+}
+
+/* настройка пагинации слайдера */
+.slick-dots{
+    
+    position: absolute;
+    bottom: -50px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    margin: 0 20px;
+    padding: 0;
+    background-color: #C4C4C4;
+    cursor: pointer;
+    transition: all .5s;
+}
+.slick-dots li button{
+    font-size: 0;
+    outline: none;
+}
+.slick-dots  .slick-active{
+    height: 3px;
+    background-color: #5A0D67;
 }
 .header__btn{
     margin-bottom: 70px;
@@ -97,7 +136,8 @@ body{
     background-size: 100% 700px;
     background-position: top center;
     width: 100%;
-    padding-bottom: 93px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
     
 }
 
@@ -113,7 +153,7 @@ body{
 .header__main-img{
     position: absolute;
     right: 0;
-    bottom: 0px;
+    bottom: -200px;
     max-width: 814px;
     
 }
@@ -235,6 +275,17 @@ body{
     color: #5A0D67;
 }
 
+.mixitup-control-active{
+    border: 2px solid #5A0D67;
+    width: 500px;
+    margin-right: 50px;
+}
+.mixitup-control-active .services__buttons-title,
+.mixitup-control-active .services__buttons-number
+{
+    color: #5A0D67;
+}
+
 .services__content-title{
     font-weight: 300;
     font-size: 18px;
@@ -255,4 +306,83 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+
+/* WHY SECTION */
+
+.why {
+    padding-bottom: 100px;
+}
+.why__inner{   
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.why__content-box {
+    background-color: #21062A;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    padding-left: 185px;
+    padding-right: 284px;
+}
+.why__item {
+    max-width: 316px;
+    margin-bottom: 10px;
+}
+.why__item-title {
+    font-size: 36px;
+    line-height: 53px;
+}
+.why__item-description {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+}
+.why__item-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #C4C4C4;
+}
+
+
+
+/* section whith slider */
+
+
+
+.galery {
+    padding-bottom: 100px;
+}
+
+.slider__item {
+    color: #2C2B2B;
+    text-align: center;
+    padding: 7px 6px 15px 6px;
+    border: 1px solid #C4C4C4;
+    margin: 0 7px;
+    transition: all .5s;
+
+}
+.slider__item:hover{
+    background-color: #5A0D67;
+    border-color: #5A0D67 ;
+    color: #fff;
+    cursor: pointer;
+}
+
+.slider__item-img {
+    max-width: 380px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.slider__item-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+
 
