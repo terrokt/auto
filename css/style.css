@@ -136,8 +136,7 @@ body{
     background-size: 100% 700px;
     background-position: top center;
     width: 100%;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
+    
     
 }
 
@@ -146,16 +145,18 @@ body{
     display: flex;
     flex-direction: column;
     
-    position: relative;
+    /* position: relative; */
     min-height: 100vh;
 }
 
 .header__main-img{
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    bottom: -200px;
+    bottom: -200px; */
     max-width: 814px;
-    
+    width: 100%;
+    margin-top: -160px;
+    float: right;
 }
 
 .header__info{
@@ -221,6 +222,7 @@ body{
 }
 .services__content{
     max-width: 500px;
+    margin-right: 20px;
 }
 .services__buttons{
     display: flex;
